@@ -3,146 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahlogonolo'Grill| Home</title>
-
+    <title>Mahlogonolo'Grill | Pricing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="_images/Monochrome Minimalist Marketing Logo.png" alt="Mahlogonolo" height="200" width="200">
-    <h1>Our Prices</h1>
 
-    <p>Below are some of the meals available at Mahlogonolo'Grill.</p>
+    <!-- Site header: logo and main navigation, repeated identically on every page -->
+    <header class="site-header">
+        <img src="_images/Monochrome Minimalist Marketing Logo.png" alt="Mahlogonolo'Grill logo" height="200" width="200">
+        <nav class="nav-link" aria-label="main navigation">
+            <ol>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="pricing.html" aria-current="page">Pricing</a></li>
+                <li><a href="enquiry.html">Enquire</a></li>
+            </ol>
+        </nav>
+    </header>
 
-    <table border="1">
+    <!-- Main content: meal price table and delivery fee table -->
+    <main class="page-pricing">
+        <h1>Our Prices</h1>
+        <p>Below are some of the meals available at Mahlogonolo'Grill.</p>
 
-        <tr>
-            <th>Meal</th>
-            <th>Description</th>
-            <th>Price</th>
-        </tr>
+        <!-- Meal price table, wrapped for horizontal scroll on small screens -->
+        <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>Meal</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Chicken Burger</td>
+                    <td>Chicken burger with chips</td>
+                    <td>R60</td>
+                </tr>
+                <tr>
+                    <td>Wors</td>
+                    <td>Grilled wors with chips</td>
+                    <td>R45</td>
+                </tr>
+                <tr>
+                    <td>Sausages</td>
+                    <td>Grilled sausages with chips</td>
+                    <td>R40</td>
+                </tr>
+                <tr>
+                    <td>Small Chips</td>
+                    <td>Freshly prepared chips</td>
+                    <td>R20</td>
+                </tr>
+                <tr>
+                    <td>Medium Chips</td>
+                    <td>Freshly prepared chips</td>
+                    <td>R30</td>
+                </tr>
+                <tr>
+                    <td>Large Chips</td>
+                    <td>Freshly prepared chips</td>
+                    <td>R40</td>
+                </tr>
+                <tr>
+                    <td>Grilled Chicken</td>
+                    <td>Grilled chicken with chips</td>
+                    <td>R60</td>
+                </tr>
+                <tr>
+                    <td>Beef Burger</td>
+                    <td>Beef burger with chips</td>
+                    <td>R70</td>
+                </tr>
+                <tr>
+                    <td>Grilled Steak</td>
+                    <td>Grilled steak with a side</td>
+                    <td>R105</td>
+                </tr>
+                <tr>
+                    <td>Chicken Wings</td>
+                    <td>Grilled wings with chips</td>
+                    <td>R85</td>
+                </tr>
+            </table>
+        </div>
 
-       <tr>
-           <td>Chicken Burger</td>
-           <td>Chicken burger with chips</td>
-           <td>R60</td>
-      </tr>
-        <tr>
-        <td>Wors</td>
-        <td>Grilled wors with chips</td>
-        <td>R45</td>
-      </tr>
+        <h2>Ordering Information</h2>
+        <p>Prices may change depending on the meal selected and the size
+           of the order.</p>
 
-      <tr>
-    <td>Sausages</td>
-    <td>Grilled sausages with chips</td>
-    <td>R40</td>
-     </tr> 
+        <h2>Delivery Prices</h2>
+        <p>Our delivery fee depends on the delivery area.</p>
 
-       <tr>
-    <td>Small Chips</td>
-    <td>Freshly prepared chips</td>
-    <td>R20</td>
-    </tr>
+        <!-- Delivery fee table, wrapped for horizontal scroll on small screens -->
+        <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>Delivery Area</th>
+                    <th>Delivery Fee</th>
+                </tr>
+                <tr>
+                    <td>Zone A</td>
+                    <td>R10</td>
+                </tr>
+                <tr>
+                    <td>Zone R</td>
+                    <td>R15</td>
+                </tr>
+                <tr>
+                    <td>Zone S</td>
+                    <td>R25</td>
+                </tr>
+                <tr>
+                    <td>Zone Q</td>
+                    <td>R30</td>
+                </tr>
+                <tr>
+                    <td>Zone B</td>
+                    <td>R35</td>
+                </tr>
+                <tr>
+                    <td>Mamaolo</td>
+                    <td>R40</td>
+                </tr>
+                <tr>
+                    <td>Seleteng</td>
+                    <td>R50</td>
+                </tr>
+            </table>
+        </div>
 
-<tr>
-    <td>Medium Chips</td>
-    <td>Freshly prepared chips</td>
-    <td>R30</td>
-</tr>
+        <!-- Photo credit: Jordan via Unsplash, see README references -->
+        <img src="_images/jordan-N1NvJoqMg9g-unsplash.jpg" alt="Grilled meal from Mahlogonolo'Grill" class="pricing-photo">
+    </main>
 
-<tr>
-    <td>Large Chips</td>
-    <td>Freshly prepared chips</td>
-    <td>R40</td>
-</tr>
-        <tr>
-            <td>Grilled Chicken</td>
-            <td>Grilled chicken with chips</td>
-            <td>R65</td>
-        </tr>
+    <!-- Site footer: copyright notice, repeated identically on every page -->
+    <footer>
+        <p>&copy; Mahlogonolo'Grill. Your cravings' favourite flame! All rights reserved. 2026</p>
+    </footer>
 
-        <tr>
-            <td>Beef Burger</td>
-            <td>Beef burger with chips</td>
-            <td>R55</td>
-        </tr>
-
-        <tr>
-            <td>Grilled Steak</td>
-            <td>Grilled steak with a side</td>
-            <td>R85</td>
-        </tr>
-
-        <tr>
-            <td>Chicken Wings</td>
-            <td>Grilled wings with chips</td>
-            <td>R60</td>
-        </tr>
-
-    </table>
-
-    <h2>Ordering Information</h2>
-
-    <p>Prices may change depending on the meal selected and the size
-       of the order.</p>
-
-       <h2>Delivery Prices</h2>
-
-<p>Our delivery fee depends on the delivery area.</p>
-
-<table border="1">
-
-    <tr>
-        <th>Delivery Area</th>
-        <th>Delivery Fee</th>
-    </tr>
-
-    <tr>
-        <td>Zone A</td>
-        <td>R10</td>
-    </tr>
-
-    <tr>
-        <td>Zone R</td>
-        <td>R15</td>
-    </tr>
-
-    <tr>
-        <td>Zone S</td>
-        <td>R25</td>
-    </tr>
-
-    <tr>
-        <td>Zone Q</td>
-        <td>R30</td>
-    </tr>
-
-    <tr>
-        <td>Zone B</td>
-        <td>R35</td>
-    </tr>
-
-    <tr>
-        <td>Mamaolo</td>
-        <td>R40</td>
-    </tr>
-
-    <tr>
-        <td>Seleteng</td>
-        <td>R50</td>
-    </tr>
-
-</table>
-<img src="_images/jordan-N1NvJoqMg9g-unsplash.jpg" alt="Mahlogonolo" width="250">
-    <nav class = "nav-Link" arial-label="main navigation"></nav>
-    <ol>
-   <li><a href="index.html">Homepage</a></li> 
-    <li><a href="services.html">services</a></li>
-   <li><a href="contact.html">Contact</a></li> 
-    <li><a href="about.html"> About us</a></li>
-    <li><a href="pricing.html">pricing</a></li>
-    <li><a href="enquiry.html">enquire</a></li>
-    </ol>
-</nav>
-    
 </body>
 </html>
