@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahlogonolo'Grill | Enquiry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Site header: logo and main navigation, repeated identically on every page -->
+    <header class="site-header">
+        <img src="_images/Monochrome Minimalist Marketing Logo.png" alt="Mahlogonolo'Grill logo" height="200" width="200">
+        <nav class="nav-link" aria-label="main navigation">
+            <ol>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="enquiry.html" aria-current="page">Enquire</a></li>
+            </ol>
+        </nav>
+    </header>
+
+    <!-- Main content: customer enquiry form -->
+    <main class="page-enquiry">
+        <h2>Send us an Enquiry</h2>
+        <!-- Enquiry form: name, email, phone, enquiry type and message, all required fields marked -->
+        <form>
+            <label for="FullName">Full Name:</label>
+            <input type="text" id="FullName" name="FullName" placeholder="Enter your full name" required>
+
+            <label for="emailAddress">Email:</label>
+            <input type="email" id="emailAddress" name="emailAddress"
+                   placeholder="example@email.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number">
+
+            <label for="enquiryType">Enquiry Type:</label>
+            <select id="enquiryType" name="enquiryType">
+                <option value="">Select an option</option>
+                <option value="products">Products</option>
+                <option value="pricing">Pricing</option>
+                <option value="general">General Enquiry</option>
+            </select>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message"
+                      placeholder="Type your enquiry here..." rows="5" cols="30"></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+        </form>
+    </main>
+
+    <!-- Site footer: copyright notice, repeated identically on every page -->
+    <footer>
+        <p>&copy; Mahlogonolo'Grill. Your cravings' favourite flame! All rights reserved. 2026</p>
+    </footer>
+
+</body>
+</html>
