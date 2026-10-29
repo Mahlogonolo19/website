@@ -1,3 +1,5 @@
+**Live site:** [https://mahlogonolo19.github.io/website/Mahlogonolo'Grill/index.html](https://mahlogonolo19.github.io/website/Mahlogonolo'Grill/index.html)
+
 # Mahlogonolo'Grill Website
 
 A multi-page website for Mahlogonolo'Grill, a local grill business based in
@@ -125,6 +127,61 @@ Also fixed while correcting the above:
 
 
 ![Mobile view](_images/screenshot-mobile.png)
+
+### Part 3 — JavaScript Enhancements
+- Added a lightbox gallery (`script.js`) so visitors can click any food photo on the Services and About pages to view it enlarged, with a close button and Escape-key support.
+- Added a live search/filter box on the Services page menu list, so visitors can type to instantly filter menu items.
+- Added an FAQ accordion on the Contact page covering delivery areas, ordering, and payment methods, with expandable/collapsible answers.
+
+### Part 3 — Forms & Validation
+- Rebuilt the enquiry form (`enquiry.html`) with full JavaScript validation (name length, email format, phone number format, message length) and a confirmation response shown on successful submission.
+- Added a new, separate contact form to `contact.html` for general messages, feedback, complaints, and partnership enquiries — distinct in purpose from the enquiry form.
+- The contact form validates input, then compiles it into an email (name, email, message type, message) and opens the user's email client via a `mailto:` link addressed to info@mahlogonologrill.co.za.
+- Added shared form error and response styling in `style.css`.
+
+## SEO
+
+### On-Page SEO
+- Descriptive, keyword-relevant `<title>` and `<meta name="description">` tags on every page.
+- Semantic header structure (`<h1>` once per page, `<h2>`/`<h3>` for sections).
+- Descriptive, specific `alt` text on all images.
+- Clean, readable URL structure (e.g. `services.html`, `pricing.html`).
+- Internal linking via the consistent navigation menu on every page.
+- Fully responsive, mobile-friendly layout (see Part 2).
+
+### Off-Page SEO
+- Recommended next steps for the business: list the site on Google Business Profile for local search visibility, share the site link on social media (Facebook/Instagram), and seek backlinks from local directories or food delivery platforms.
+
+### Additional SEO Measures
+- `robots.txt` and `sitemap.xml` added to guide search engine crawlers.
+- `X-Content-Type-Options: nosniff` meta tag added to every page as a basic security measure.
+- Lightweight CSS/JS and optimised image usage to support fast page load times.
+
+### Part 3 — JavaScript Enhancements, Forms, SEO & Deployment
+
+**JavaScript Enhancements**
+- Added a lightbox gallery (`script.js`) so visitors can click any food photo on the Services and About pages to view it enlarged, with a close button, click-outside-to-close, and Escape-key support.
+- Added a live search/filter box on the Services page menu list, letting visitors type to instantly filter menu items (dynamic content).
+- Added an FAQ accordion on the Contact page (delivery areas, ordering, payment methods) with expandable/collapsible answers and smooth transitions.
+
+**Forms & Validation**
+- Rebuilt the enquiry form (`enquiry.html`) with full JavaScript validation (name length, email format, phone number format, message length) and a fixed confirmation response shown on successful submission.
+- Added a new, separate contact form to `contact.html` for general messages, feedback, complaints, and partnership enquiries — distinct in purpose from the enquiry form, as required.
+- The contact form validates input, then compiles it into an email (name, email, message type, message) and opens the user's email client via a `mailto:` link addressed to info@mahlogonologrill.co.za.
+- Added shared form error and response styling in `style.css`.
+
+**SEO**
+- Added descriptive, keyword-relevant `<title>` and `<meta name="description">` tags to every page.
+- Improved image `alt` text on the Services gallery to be more specific and descriptive.
+- Added `robots.txt` and `sitemap.xml` to guide search engine crawlers.
+- Added `X-Content-Type-Options: nosniff` meta tag to every page as a basic security measure.
+- Confirmed existing semantic header structure, clean URLs, internal linking via the navigation menu, and mobile-friendly responsive layout all support on-page SEO.
+- Documented recommended off-page SEO steps (Google Business Profile listing, social media promotion, local directory backlinks) for future implementation.
+
+**Deployment**
+- Deployed the site using GitHub Pages, live at: https://mahlogonolo19.github.io/website/Mahlogonolo'Grill/index.html
+- Added a `.nojekyll` file at the repository root to ensure the `_images` folder (and other underscore-prefixed folders) publish correctly on GitHub Pages, since Jekyll processing ignores them by default.
+- Added a redirect `index.html` at the repository root so the base site URL automatically forwards visitors to the actual homepage.
 
 ## References
 
