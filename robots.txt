@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mahlogonolo19.github.io/website/Mahlogonolo'Grill/sitemap.xml
