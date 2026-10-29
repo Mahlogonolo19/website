@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahlogonolo'Grill | Contact</title>
+    <title>Contact Us | Mahlogonolo'Grill Lebowakgomo</title>
+    <meta name="description" content="Contact Mahlogonolo'Grill for orders, enquiries, or more information. Call, WhatsApp, or email us today.">
+   <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -24,6 +27,63 @@
             </ol>
         </nav>
     </header>
+<!-- Contact form: general message compiled and sent via email -->
+<h2>Send Us a Message</h2>
+<form id="contact-form" novalidate>
+    <label for="contactName">Full Name:</label>
+    <input type="text" id="contactName" name="contactName" placeholder="Enter your full name" required>
+    <span class="form-error" id="error-contactName"></span>
+
+    <label for="contactEmail">Email:</label>
+    <input type="email" id="contactEmail" name="contactEmail" placeholder="example@email.com" required>
+    <span class="form-error" id="error-contactEmail"></span>
+
+    <label for="messageType">Message Type:</label>
+    <select id="messageType" name="messageType">
+        <option value="General">General</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Partnership">Partnership</option>
+    </select>
+
+    <label for="contactMessage">Your Message:</label>
+    <textarea id="contactMessage" name="contactMessage" placeholder="Type your message here..." rows="5" cols="30" required></textarea>
+    <span class="form-error" id="error-contactMessage"></span>
+
+    <button type="submit">Send Message</button>
+
+    <p id="contact-response" class="form-response" hidden></p>
+</form>
+<!-- FAQ accordion: common customer questions -->
+<h2>Frequently Asked Questions</h2>
+<div class="accordion">
+    <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+            What areas do you deliver to?
+        </button>
+        <div class="accordion-panel">
+            <p>We deliver to Zone A, Zone R, Zone S, Zone Q, Zone B, Mamaolo, and Seleteng. See our Pricing page for delivery fees per area.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+            How do I place an order?
+        </button>
+        <div class="accordion-panel">
+            <p>Call us on 063 236 8156, message us on WhatsApp, or fill out our enquiry form, and we'll confirm your order and delivery time.</p>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+        <button class="accordion-trigger" aria-expanded="false">
+            What payment methods do you accept?
+        </button>
+        <div class="accordion-panel">
+            <p>We accept cash on delivery and EFT. Card payment options are coming soon.</p>
+        </div>
+    </div>
+</div>
 
     <!-- Main content: contact details and order-placing information -->
     <main class="page-contact">

@@ -349,3 +349,122 @@ footer {
         padding: 1rem;
     }
 }
+
+/* --- Lightbox --- */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(36, 28, 28, 0.9);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.lightbox-overlay.is-open {
+    display: flex;
+}
+
+.lightbox-image {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 0.25rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    animation: lightbox-fade-in 0.2s ease;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    color: var(--flame);
+}
+
+@keyframes lightbox-fade-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* --- FAQ Accordion --- */
+.accordion {
+    max-width: 40rem;
+    margin-bottom: 2rem;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #e6dccf;
+}
+
+.accordion-trigger {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    font: inherit;
+    font-weight: 600;
+    color: var(--charcoal);
+    padding: 1rem 1.5rem 1rem 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion-trigger::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    font-size: 1.3rem;
+    color: var(--flame);
+    transition: transform 0.2s ease;
+}
+
+.accordion-item.is-open .accordion-trigger::after {
+    transform: rotate(45deg);
+}
+
+.accordion-trigger:hover,
+.accordion-trigger:focus {
+    color: var(--flame);
+}
+
+.accordion-panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease;
+}
+
+.accordion-item.is-open .accordion-panel {
+    max-height: 12rem;
+}
+
+.accordion-panel p {
+    padding-bottom: 1rem;
+}
+
+/* --- Form validation errors & response --- */
+.form-error {
+    display: block;
+    color: var(--ember);
+    font-size: 0.85rem;
+    min-height: 1.1rem;
+}
+
+.form-response {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e9f7ee;
+    border: 1px solid #a8d8b9;
+    border-radius: 0.25rem;
+    color: #1d5e35;
+    font-weight: 600;
+}

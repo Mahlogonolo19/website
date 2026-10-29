@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mahlogonolo'Grill | Enquiry</title>
+    <title> Enquire About Our Menu | Mahlogonolo'Grill </title>
+    <meta name="description" content="Send an enquiry to Mahlogonolo'Grill about our menu, pricing, or delivery availability.">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600;700&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
 
@@ -29,32 +32,38 @@
     <main class="page-enquiry">
         <h2>Send us an Enquiry</h2>
         <!-- Enquiry form: name, email, phone, enquiry type and message, all required fields marked -->
-        <form>
-            <label for="FullName">Full Name:</label>
-            <input type="text" id="FullName" name="FullName" placeholder="Enter your full name" required>
+<form id="enquiry-form" novalidate>
+    <label for="FullName">Full Name:</label>
+    <input type="text" id="FullName" name="FullName" placeholder="Enter your full name" required>
+    <span class="form-error" id="error-FullName"></span>
 
-            <label for="emailAddress">Email:</label>
-            <input type="email" id="emailAddress" name="emailAddress"
-                   placeholder="example@email.com" required>
+    <label for="emailAddress">Email:</label>
+    <input type="email" id="emailAddress" name="emailAddress"
+           placeholder="example@email.com" required>
+    <span class="form-error" id="error-emailAddress"></span>
 
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone"
-                   placeholder="Enter your phone number">
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"
+           placeholder="e.g. 0712345678">
+    <span class="form-error" id="error-phone"></span>
 
-            <label for="enquiryType">Enquiry Type:</label>
-            <select id="enquiryType" name="enquiryType">
-                <option value="">Select an option</option>
-                <option value="products">Products</option>
-                <option value="pricing">Pricing</option>
-                <option value="general">General Enquiry</option>
-            </select>
+    <label for="enquiryType">Enquiry Type:</label>
+    <select id="enquiryType" name="enquiryType">
+        <option value="">Select an option</option>
+        <option value="products">Products</option>
+        <option value="pricing">Pricing</option>
+        <option value="general">General Enquiry</option>
+    </select>
 
-            <label for="message">Your Message:</label>
-            <textarea id="message" name="message"
-                      placeholder="Type your enquiry here..." rows="5" cols="30"></textarea>
+    <label for="message">Your Message:</label>
+    <textarea id="message" name="message"
+              placeholder="Type your enquiry here..." rows="5" cols="30" required></textarea>
+    <span class="form-error" id="error-message"></span>
 
-            <button type="submit">Submit Enquiry</button>
-        </form>
+    <button type="submit">Submit Enquiry</button>
+
+    <p id="enquiry-response" class="form-response" hidden></p>
+</form>
     </main>
 
     <!-- Site footer: copyright notice, repeated identically on every page -->
