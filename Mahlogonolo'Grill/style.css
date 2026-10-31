@@ -468,3 +468,17 @@ footer {
     color: #1d5e35;
     font-weight: 600;
 }
+
+/* --- Interactive map --- */
+#map {
+    height: 20rem;
+    width: 100%;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.15rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.leaflet-container img {
+    max-width: none !important;
+}

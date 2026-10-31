@@ -209,3 +209,24 @@ document.addEventListener('DOMContentLoaded', function () {
         responseBox.hidden = false;
     });
 });
+
+// Interactive map (contact page): shows the grill's location with a marker
+document.addEventListener('DOMContentLoaded', function () {
+    const mapBox = document.getElementById('map');
+    if (!mapBox || typeof L === 'undefined') return; // only runs on contact.html
+
+    // Approximate coordinates for Lebowakgomo
+    const grillLocation = [-24.2167, 29.5000];
+
+    const map = L.map('map').setView(grillLocation, 14);
+
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    L.marker(grillLocation)
+        .addTo(map)
+        .bindPopup("<strong>Mahlogonolo'Grill</strong><br>139 Unit A, Lebowakgomo")
+        .openPopup();
+});
