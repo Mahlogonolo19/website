@@ -183,44 +183,63 @@ Also fixed while correcting the above:
 - Added a `.nojekyll` file at the repository root to ensure the `_images` folder (and other underscore-prefixed folders) publish correctly on GitHub Pages, since Jekyll processing ignores them by default.
 - Added a redirect `index.html` at the repository root so the base site URL automatically forwards visitors to the actual homepage.
 
+- Added an interactive Leaflet/OpenStreetMap map to the Contact page showing the grill's location with a clickable marker popup.
+- Added `<meta name="keywords">` tags to every page with relevant, page-specific keywords.
+- Added an interactive Leaflet/OpenStreetMap map to the Contact page showing the grill's location with a clickable marker popup.
+- Added `<meta name="keywords">` tags to every page with relevant, page-specific keywords.
+
+### Part 2 Feedback Corrections
+Part 2 feedback scored 95/100. Marks were lost on two criteria, and both were addressed:
+
+- **Feedback for Part 1 ("changelog detailed but could be improved"):** The earlier changelog grouped fixes together. It now records every fix per file, with what was wrong, what changed, and why:
+  - `index.html`: the navigation list sat outside its `<nav>` tag, and the class was misspelled `nav-Link` instead of `nav-link`, so no CSS applied. Fixed both and added `aria-label` (was misspelled `arial-label`).
+  - `about.html`: header and main were swapped (page text inside `<header>`, logo and menu inside `<main>`). Moved each back into its correct element.
+  - `contact.html`: the header sat at the bottom of the page, after `<main>`, and the logo was missing. Moved it to the top and restored the logo.
+  - `enquiry.html`: the form was outside `<body>`, there was a duplicate `</form>`, the Full Name input had a malformed `name` attribute, and the page title said "Home". Fixed all four.
+  - `pricing.html`: the header sat at the bottom and held a food photo instead of the logo. Restored the logo, moved the photo into `<main>`, and wrapped both tables in a scrollable container.
+  - `services.html`: the header sat at the bottom, and the gallery images were placed directly inside a `<ul>` (invalid HTML). Moved them into their own gallery `<div>`.
+-- **References ("incorrectly formatted"):** Rewrote the reference list in the IIE Harvard (Anglia) style: Author, Year. Title. [online] Available at: <URL> [Accessed date]. Sources are in alphabetical order, photographs use the [photograph] format, missing years are shown as [s.a.], and in-text citations were added. The two missing photo credits and the Part 3 sources (Leaflet, OpenStreetMap, Google Search Central, MDN form validation, GitHub Pages) were added.
 ## References
 
-MDN Web Docs (2026) *CSS Flexible Box Layout*. Mozilla. Available at:
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout
-(Accessed: [add date]).
+## References
 
-MDN Web Docs (2026) *CSS Grid Layout*. Mozilla. Available at:
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout
-(Accessed: [add date]).
+Anshu A, [s.a.]. Food photograph. [photograph] Available at: &lt;https://unsplash.com/photos/j03VKw-IflE&gt; [Accessed 31 October 2026].
 
-MDN Web Docs (2026) *Using media queries*. Mozilla. Available at:
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries
-(Accessed: [add date]).
+Barrett, R., [s.a.]. Food photograph. [photograph] Available at: &lt;https://unsplash.com/photos/xmibn7mzXV0&gt; [Accessed 31 October 2026].
 
-Google Fonts (2026) *Zilla Slab*. Available at:
-https://fonts.google.com/specimen/Zilla+Slab (Accessed: [18 september 2026]).
+Connor, M., [s.a.]. Food photograph. [photograph] Available at: &lt;https://unsplash.com/photos/9Qs_9n2oSJo&gt; [Accessed 31 October 2026].
 
-Google Fonts (2026) *Mulish*. Available at:
-https://fonts.google.com/specimen/Mulish (Accessed: [18 september 2026]).
+GitHub, [s.a.]. GitHub Pages documentation. [online] Available at: &lt;https://docs.github.com/en/pages&gt; [Accessed 31 October 2026].
 
-Connor, M. (n.d.) *Untitled photograph*. Unsplash. Available at:
-https://unsplash.com/photos/9Qs_9n2oSJo (Accessed: [18 september 2026]).
+Google Fonts, [s.a.]. Mulish. [online] Available at: &lt;https://fonts.google.com/specimen/Mulish&gt; [Accessed 31 October 2026].
 
-Mucha, M. (n.d.) *Untitled photograph*. Unsplash. Available at:
-https://unsplash.com/photos/a74X5kHDs20 (Accessed: [18 september 2026]).
+Google Fonts, [s.a.]. Zilla Slab. [online] Available at: &lt;https://fonts.google.com/specimen/Zilla+Slab&gt; [Accessed 31 October 2026].
 
-A, A. (n.d.) *Untitled photograph*. Unsplash. Available at:
-https://unsplash.com/photos/j03VKw-IflE (Accessed: [18 september 2026]).
+Google Search Central, [s.a.]. Introduction to robots.txt. [online] Available at: &lt;https://developers.google.com/search/docs/crawling-indexing/robots/intro&gt; [Accessed 31 October 2026].
 
-SK (n.d.) *Untitled photograph*. Unsplash. Available at:
-https://unsplash.com/photos/uVPV_nV17Tw (Accessed: [18 september 2026]).
+Google Search Central, [s.a.]. Learn about sitemaps. [online] Available at: &lt;https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview&gt; [Accessed 31 October 2026].
 
-Ambitious Studio | Rick Barrett (n.d.) *Untitled photograph*. Unsplash.
-Available at: https://unsplash.com/photos/xmibn7mzXV0
-(Accessed: [18 september 2026]).
+Jordan, [s.a.]. Food photograph. [photograph] Available at: &lt;https://unsplash.com/photos/N1NvJoqMg9g&gt; [Accessed 31 October 2026].
 
-Jordan (n.d.) *Untitled photograph*. Unsplash. Available at:
-https://unsplash.com/photos/N1NvJoqMg9g (Accessed: [18 september 2026]).
+Ketz, Z., [s.a.]. Food photograph. [photograph] Available at: &lt;https://unsplash.com/photos/jffYxYP7L8Q&gt; [Accessed 31 October 2026].
+
+Leaflet, [s.a.]. Leaflet quick start guide. [online] Available at: &lt;https://leafletjs.com/examples/quick-start/&gt; [Accessed 31 October 2026].
+
+Mclean, E., [s.a.]. Food photograph. [photograph] Available at: &lt;https://unsplash.com/photos/xuT5ypEdf_g&gt; [Accessed 31 October 2026].
+
+MDN Web Docs, [s.a.]. Client-side form validation. [online] Available at: &lt;https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation&gt; [Accessed 31 October 2026].
+
+MDN Web Docs, [s.a.]. CSS flexible box layout. [online] Available at: &lt;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout&gt; [Accessed 31 October 2026].
+
+MDN Web Docs, [s.a.]. CSS grid layout. [online] Available at: &lt;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout&gt; [Accessed 31 October 2026].
+
+MDN Web Docs, [s.a.]. Using media queries. [online] Available at: &lt;https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries&gt; [Accessed 31 October 2026].
+
+Mucha, M., [s.a.]. Food photograph. [photograph] Available at: &lt;https://unsplash.com/photos/a74X5kHDs20&gt; [Accessed 31 October 2026].
+
+OpenStreetMap, [s.a.]. Copyright and license. [online] Available at: &lt;https://www.openstreetmap.org/copyright&gt; [Accessed 31 October 2026].
+
+SK, [s.a.]. Food photograph. [photograph] Available at: &lt;https://unsplash.com/photos/uVPV_nV17Tw&gt; [Accessed 31 October 2026].
 
 > Double-check each Unsplash link opens the correct photo before
 > submitting, and fill in the actual date you accessed each source —
